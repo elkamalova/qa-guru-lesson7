@@ -15,9 +15,9 @@ public class ZipFileTests {
     @Test
     void zipWithPasswordTest() throws IOException, ZipException {
         String zipFilePath = "./src/test/resources/files/1_withPass.zip";
-        String unzipFolderPath = "./src/test/resources/files/unzip";
+        String unzipFolderPath = "./src/test/resources/files/unzipWithPass";
         String zipPassword = "password";
-        String unzipTxtFilePath = "./src/test/resources/files/unzip/1.txt";
+        String unzipTxtFilePath = "./src/test/resources/files/unzipWithPass/1.txt";
         String expectedData = "Lesson_7";
 
         unzip(zipFilePath, unzipFolderPath, zipPassword);
@@ -30,8 +30,8 @@ public class ZipFileTests {
     @Test
     void zipTest() throws IOException, ZipException {
         String zipFilePath = "./src/test/resources/files/1_withoutPass.zip";
-        String unzipFolderPath = "./src/test/resources/files/unzip";
-        String unzipTxtFilePath = "./src/test/resources/files/unzip/1.txt";
+        String unzipFolderPath = "./src/test/resources/files/unzipWithoutPass";
+        String unzipTxtFilePath = "./src/test/resources/files/unzipWithoutPass/1.txt";
         String expectedData =  "Lesson";
 
         unzip(zipFilePath, unzipFolderPath);
